@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+"http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//"
+"http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd"> -->
+
+<tiles-definitions>
+
+<definition name="wel" page="./layout.jsp">
+<put name="header" value="/header.jsp"/>
+<put name="option" value="/option.jsp"/>
+<put name="content" value="/welcome.jsp"/>
+<put name="footer" value="/footer.jsp"/>
+</definition>
+<definition name="insertdef" extends="wel">
+<put name="content" value="/insert.jsp"/>
+</definition>
+<definition name="selectdef" extends="wel">
+<put name="content" value="/select.jsp"/>
+</definition>
+<definition name="updatedef" extends="wel">
+<put name="content" value="/update.jsp"/>
+</definition>
+<definition name="update1def" extends="wel">
+<put name="content" value="/update1.jsp"/>
+</definition>
+<definition name="deletedef" extends="wel">
+<put name="content" value="/delete.jsp"/>
+</definition>
+<definition name="successdef" extends="wel">
+<put name="content" value="/success.jsp"/>
+</definition>
+<definition name="errordef" extends="wel">
+<put name="content" value="/error.jsp"/>
+</definition>
+<definition name="norecorddef" extends="wel">
+<put name="content" value="/norecord.jsp"/>
+</definition>
+<definition name="duplicaterecdef" extends="wel">
+<put name="content" value="/duplicate.jsp"/>
+</definition>
+</tiles-definitions>
