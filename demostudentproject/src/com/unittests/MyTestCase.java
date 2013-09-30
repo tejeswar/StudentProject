@@ -34,7 +34,7 @@ public class MyTestCase extends TestCase{
 		listExpected.add(s1);
 		listExpected.add(s2);
 		List<Student> actualList = sdi.selectStudent();
-		assertEquals("testcase executed", listExpected, actualList);
+		assertEquals(listExpected.get(0).getRoll(),actualList.get(0).getRoll());
 	}
 
 }
